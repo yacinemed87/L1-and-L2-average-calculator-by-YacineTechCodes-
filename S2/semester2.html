@@ -13,17 +13,13 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-16HX7EDPMW');
     </script>
     <script src="../themes.js"></script>
     <script>
         // Immediately apply saved theme to prevent flash of unstyled content
         (function () {
-            // Get theme from localStorage
             const savedTheme = localStorage.getItem('preferredTheme');
-
-            // Apply theme if saved
             if (savedTheme && window.themes[savedTheme]) {
                 const theme = window.themes[savedTheme];
                 Object.entries(theme).forEach(([property, value]) => {
